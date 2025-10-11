@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos - RoBo_Go</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="https://unpkg.com/7.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: url("Backround.webp") no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    /* --- Carte principale transparente --- */
+    .card {
+      background: rgba(40, 40, 40, 0.4);
+      border-radius: 12px;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    /* --- Fenêtre sombre et translucide --- */
+    .window.dark {
+      background: rgba(15, 15, 15, 0.65); /* noir translucide */
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border-radius: 8px;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    }
+
+    .window.dark .title-bar {
+      background: linear-gradient(rgba(60, 60, 60, 0.9), rgba(25, 25, 25, 0.8));
+      color: #fff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 8px 8px 0 0;
+      text-shadow: none;
+    }
+
+    .window.dark .title-bar-text {
+      color: #fff;
+      text-shadow: none;
+    }
+
+    .window.dark .window-body {
+      background: rgba(25, 25, 25, 0.6);
+      border-radius: 0 0 8px 8px;
+      color: #fff;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h2, p {
+      color: #fff;
+    }
+
+    /* Bouton style Windows 7 */
+    .win7-button {
+      font-family: "Segoe UI", sans-serif;
+      font-size: 14px;
+      padding: 6px 16px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background: linear-gradient(to bottom, #f0f0f0, #dcdcdc);
+      box-shadow: inset 0 1px 0 #fff;
+      color: #000;
+      cursor: pointer;
+      transition: 0.15s;
+    }
+
+    .win7-button:hover {
+      background: linear-gradient(to bottom, #e4e4e4, #c8c8c8);
+    }
+
+    .win7-button:active {
+      background: linear-gradient(to bottom, #c8c8c8, #e4e4e4);
+    }
+
+    /* Liens sociaux */
+    .social-links a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-right: 10px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
+      color: #1e90ff;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <div class="header-inner">
+        <img class="logo" src="logo rob aero.png" alt="Logo">
+        <h1 class="brand">RoBo_Go</h1>
+      </div>
+
+      <!-- Barre de navigation -->
+      <nav class="topbar">
+        <ul class="links">
+          <li>
+            <a href="10iotsite.html">
+              <img src="Home.png" alt="Home icon" class="link-icon"> Accueil
+            </a>
+          </li>
+          <li>
+            <a href="jeux.html">
+              <img src="i.ico" alt="Game icon" class="link-icon"> Jeux
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+              <img src="i.ico" alt="Info icon" class="link-icon"> À propos
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="card-body">
+        <div class="window dark active" style="max-width: 700px; margin: 60px auto;">
+          <div class="title-bar">
+            <div class="title-bar-text">À propos de moi</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+
+          <div class="window-body">
+            <h2>Salut, moi c’est RoBo_Go !</h2>
+            <p>
+              Je suis Dev, animateur, et amateur de tout ce qui touche au numérique !  
+              Ma chaîne <b>RoBo_Go</b> est un endroit où je partage mes projets, mes jeux, et mes idées un peu folles !
+              Ici, tu peux découvrir mes créations, suivre les mises à jour de ce que je fais et explorer l’univers que j'essaye de construire petit à petit.
+            </p>
+
+            <p>
+              J’aime tout ce qui touche aux univers rétro, à la programmation, et aux jeux qui racontent des histoires sympa.  
+              Si tu veux suivre ce que je fais, ou simplement voir à quoi je travaille en ce moment, tu peux rester sur ce site ou me suivre :
+            </p>
+
+            <div class="social-links">
+              <a href="https://www.youtube.com/@RoBo_Go" target="_blank">Mon YouTube</a>
+              <a href="mailto:RoBo_Go-LeBeau@proton.me">Me contacter</a>
+            </div>
+
+            <div style="text-align: right; margin-top: 20px;">
+              <a href="https://RoBo-Go.github.io">
+                <button class="win7-button"> Retour à l’accueil</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

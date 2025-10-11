@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Jeux - RoBo_Go</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="https://unpkg.com/7.css">
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <div class="header-inner">
+        <img class="logo" src="logo rob aero.png" alt="Vista Logo">
+        <h1 class="brand">RoBo_Go</h1>
+      </div>
+
+      <!-- barre de navigation -->
+      <nav class="topbar">
+        <ul class="links">
+          <li>
+            <a href="https://robo-go.github.io">
+              <img src="Home.png" alt="Home icon" class="link-icon"> Accueil
+            </a>
+          </li>
+          <li>
+            <a href="jeux.html">
+              <img src="i.ico" alt="Game icon" class="link-icon"> Jeux
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Contenu -->
+      <div class="card-body">
+        <h2 class="section-title">
+          <img src="i.ico" alt="" class="heading-icon"><b>Mes Jeux</b>
+        </h2>
+        <p class="intro-text">Voici une sélection de mes jeux. Clique sur une fenêtre pour jouer ou découvrir !</p>
+
+        <!-- Grille de jeux -->
+        <div class="games-grid" style="display:flex; flex-wrap:wrap; gap:20px;">
+
+          <!-- Jeu 1 -->
+          <div class="window active" style="width: 250px;">
+            <div class="title-bar">
+              <div class="title-bar-text">Mr Droledeface</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="window-body">
+              <img src="ddfsnap.png" alt="Jeu 1" style="width:100%; border-radius:6px;">
+              <section class="field-row" style="justify-content: flex-end; margin-top:10px;">
+                <a href="https://robo-go.github.io/pagemrdroledeface" target="_blank">
+                  <button>Jouer</button>
+                </a>
+              </section>
+            </div>
+          </div>
+
+          <!-- Jeu 2 -->
+          <div class="window active" style="width: 250px;">
+            <div class="title-bar">
+              <div class="title-bar-text">Coming soon</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="window-body">
+              <img src="coming soon.png" alt="Jeu 2" style="width:100%; border-radius:6px;">
+              <section class="field-row" style="justify-content: flex-end; margin-top:10px;">
+                <a href="" target="_blank">
+                  <button>Jouer</button>
+                </a>
+              </section>
+            </div>
+          </div>
+
+          <!-- Jeu 3 -->
+          <div class="window active" style="width: 250px;">
+            <div class="title-bar">
+              <div class="title-bar-text">Coming soon</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="window-body">
+              <img src="coming soon.png" alt="Jeu 3" style="width:100%; border-radius:6px;">
+              <section class="field-row" style="justify-content: flex-end; margin-top:10px;">
+                <a href="" target="_blank">
+                  <button>Jouer</button>
+                </a>
+              </section>
+            </div>
+          </div>
+
+        </div> <!-- fin de la grille -->
+      </div>
+    </div>
+  </main>
+</body>
+</html>
