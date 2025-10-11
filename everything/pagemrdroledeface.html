@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr Droledeface - RoBo_Go</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="https://unpkg.com/7.css">
+  <style>
+    /* --- Mise en page du contenu du jeu --- */
+    .game-layout {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .game-layout img {
+      width: 45%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .game-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-width: 250px;
+    }
+
+    /* --- Fenêtre sombre sans glow --- */
+    .window.dark {
+      background-color: #1c1c1c;
+      color: #ffffff;
+      border: 1px solid #333;
+    }
+
+    .window.dark .window-body {
+      background-color: #2a2a2a;
+      border-radius: 6px;
+      color: #ffffff;
+    }
+
+    .window.dark .title-bar {
+      background: linear-gradient(#3a3a3a, #1f1f1f);
+      color: #ffffff;
+      text-shadow: none;
+      border-bottom: 1px solid #333;
+    }
+
+    .window.dark .title-bar-text {
+      color: #ffffff;
+      text-shadow: none;
+    }
+
+    .window.dark .title-bar-controls button {
+      background-color: #3a3a3a;
+      border: 1px solid #555;
+      color: #ffffff;
+    }
+
+    /* --- Texte bien lisible --- */
+    .game-info h3 {
+      color: #ffffff;
+    }
+
+    .game-info p {
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    /* --- Bouton “Jouer” style Windows 7 (7.css) --- */
+    .win7-button {
+      font-family: "Segoe UI", sans-serif;
+      font-size: 14px;
+      padding: 6px 16px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background: linear-gradient(to bottom, #f0f0f0, #dcdcdc);
+      box-shadow: inset 0 1px 0 #fff;
+      color: #000;
+      cursor: pointer;
+      transition: 0.15s;
+    }
+
+    .win7-button:hover {
+      background: linear-gradient(to bottom, #e4e4e4, #c8c8c8);
+    }
+
+    .win7-button:active {
+      background: linear-gradient(to bottom, #c8c8c8, #e4e4e4);
+      box-shadow: inset 0 2px 3px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <div class="header-inner">
+        <img class="logo" src="logo rob aero.png" alt="Vista Logo">
+        <h1 class="brand">RoBo_Go</h1>
+      </div>
+
+      <!-- Barre de navigation -->
+      <nav class="topbar">
+        <ul class="links">
+          <li>
+            <a href="https://robo-go.github.io">
+              <img src="Home.png" alt="Home icon" class="link-icon"> Accueil
+            </a>
+          </li>
+          <li>
+            <a href="jeux.html">
+              <img src="i.ico" alt="Game icon" class="link-icon"> Jeux
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Contenu principal -->
+      <div class="card-body">
+        <div class="window dark active" style="max-width: 900px; margin: 0 auto;">
+          <div class="title-bar">
+            <div class="title-bar-text">Mr Droledeface</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+
+          <div class="window-body">
+            <div class="game-layout">
+              <!-- Image du jeu -->
+              <img src="ddfsnap.png" alt="Capture du jeu">
+
+              <!-- Description + bouton -->
+              <div class="game-info">
+                <div>
+                  <h3>Description</h3>
+                  <p>
+                    Mon premier jeu sur wick, un jeu vraiemnt test.
+                  </p>
+                </div>
+
+                <!-- Bouton jouer style Windows 7 -->
+                <div style="text-align: right; margin-top: 20px;">
+                  <a href="https://robo-go.github.io/mrdroledeface" target="_blank">
+                    <button class="win7-button">🎮 Jouer</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
