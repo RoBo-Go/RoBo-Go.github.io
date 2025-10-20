@@ -17,7 +17,7 @@ body {
   margin: 0;
   color: #fff; /* Changed to white for better contrast */
   font: 16px/1.5 "Segoe UI", "Segoe UI Variable Text", "Segoe UI Variable Display", SegoeUI, -apple-system, system-ui, "Helvetica Neue", Arial, sans-serif;
-  background: url("Backround.webp") no-repeat center center fixed; /* Use the provided background image */
+  background: url("windows7.webp") no-repeat center center fixed; /* Use the provided background image */
   background-size: cover;
   padding: 4px;
 }
