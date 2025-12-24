@@ -23,17 +23,17 @@
       <nav class="topbar">
         <ul class="links">
           <li>
-            <a href="https://robo-go.github.io">
+            <a href="https://robo-go.is-a.dev">
               <img src="Home.png" alt="Home icon" draggable="false" class="link-icon"> Accueil
             </a>
           </li>
           <li>
-            <a href="https://robo-go.github.io/jeux">
+            <a href="https://robo-go.is-a.dev/jeux">
               <img src="games.ico" alt="Game icon" draggable="false" class="link-icon"> Jeux
             </a>
           </li>
           <li>
-            <a href="https://robo-go.github.io/about">
+            <a href="https://robo-go.is-a.dev/about">
               <img src="i.ico" alt="Info icon" draggable="false" class="link-icon"> À propos
             </a>
           </li>
@@ -43,76 +43,102 @@
       <!-- Contenu -->
       <div class="card-body">
         <h2 class="section-title">
-          <img src="i.ico" alt="" class="heading-icon"><b>Mes Jeux</b>
+          <img src="i.ico" alt="" draggable="false" class="heading-icon"><b>Mes Jeux</b>
         </h2>
-        <p class="intro-text">Voici une sélection de mes jeux. Clique sur une fenêtre pour jouer ou découvrir !</p>
+<p class="intro-text">
+  Voici une sélection de mes jeux. Clique sur une fenêtre pour jouer ou découvrir !
+</p>
 
-        <!-- Grille de jeux -->
-        <div class="games-grid" style="display:flex; flex-wrap:wrap; gap:20px;">
+<!-- Grille de jeux -->
+<div class="games-grid" style="display:flex; flex-wrap:wrap; gap:20px;">
 
-          <!-- Jeu 1 -->
-          <div class="window active" style="width: 250px;">
-            <div class="title-bar">
-              <div class="title-bar-text">Mr Droledeface</div>
-              <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
-              </div>
-            </div>
-            <div class="window-body">
-              <img src="ddfsnap.png" alt="Jeu 1" draggable="false" style="width:100%; border-radius:6px;">
-              <section class="field-row" style="justify-content: flex-end; margin-top:10px;">
-                <a href="https://robo-go.github.io/pagemrdroledeface" target="_blank">
-                  <button>Jouer</button>
-                </a>
-              </section>
-            </div>
-          </div>
-
-          <!-- Jeu 2 -->
-          <div class="window active" style="width: 250px;">
-            <div class="title-bar">
-              <div class="title-bar-text">Coming soon</div>
-              <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
-              </div>
-            </div>
-            <div class="window-body">
-              <img src="coming soon.png" alt="Jeu 2" draggable="false" style="width:100%; border-radius:6px;">
-              <section class="field-row" style="justify-content: flex-end; margin-top:10px;">
-                <a href="" target="_blank">
-                  <button>Jouer</button>
-                </a>
-              </section>
-            </div>
-          </div>
-
-          <!-- Jeu 3 -->
-          <div class="window active" style="width: 250px;">
-            <div class="title-bar">
-              <div class="title-bar-text">Coming soon</div>
-              <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
-              </div>
-            </div>
-            <div class="window-body">
-              <img src="coming soon.png" alt="Jeu 3" draggable="false" style="width:100%; border-radius:6px;">
-              <section class="field-row" style="justify-content: flex-end; margin-top:10px;">
-                <a href="" target="_blank">
-                  <button>Jouer</button>
-                </a>
-              </section>
-            </div>
-          </div>
-
-        </div> <!-- fin de la grille -->
+  <!-- Jeu 1 -->
+  <div class="window dark active" style="width:250px;">
+    <div class="title-bar">
+      <div style="user-select: none;" class="title-bar-text">Mr Droledeface</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
       </div>
     </div>
-  </main>
-</body>
-</html>
+
+    <div class="window-body">
+      <img src="ddfsnap.png" alt="Mr Droledeface" draggable="false"
+           style="width:100%; border-radius:6px;">
+
+		<p class="game-author" style="color:#000;">
+		Créé par :
+		<img src="favicon.png"
+			alt="RoBo_Go"
+			draggable="false"
+			style="height:25px; width:auto; vertical-align:middle;">
+		</p>
+
+      <section class="field-row" style="justify-content:flex-end; margin-top:10px;">
+        <a href="https://robo-go.github.io/pagemrdroledeface" target="_blank">
+          <button style="user-select: none;" class="win7-button">Jouer</button>
+        </a>
+      </section>
+    </div>
+  </div>
+
+  <!-- Jeu 2 -->
+  <div class="window dark active" style="width:250px;">
+    <div class="title-bar">
+      <div style="user-select: none;" class="title-bar-text">Coming soon </div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+
+    <div class="window-body">
+      <img src="coming soon.png" alt="Jeu à venir" draggable="false"
+           style="width:100%; border-radius:6px;">
+
+		<p class="game-author" draggable="false" style="color:#000;">
+		Créé par :
+		<img src="favicon.png"
+			alt="RoBo_Go"
+			draggable="false"
+			style="height:25px; width:auto; vertical-align:middle;">
+		</p>
+
+      <section class="field-row" style="justify-content:flex-end; margin-top:10px;">
+        <button class="win7-button" disabled>Jouer</button>
+      </section>
+    </div>
+  </div>
+
+  <!-- Jeu 3 -->
+  <div class="window dark active" style="width:250px;">
+    <div class="title-bar">
+      <div style="user-select: none;" class="title-bar-text">Coming soon</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+
+    <div class="window-body">
+      <img src="coming soon.png" alt="Coming soon" draggable="false"
+           style="width:100%; border-radius:6px;">
+
+		<p class="game-author"  style="color:#000;">
+		Créé par :
+		<img src="favicon.png"
+			alt="RoBo_Go"
+			draggable="false"
+			style="height:25px; width:auto; vertical-align:middle;">
+		</p>
+
+      <section class="field-row" style="justify-content:flex-end; margin-top:10px;">
+        <button class="win7-button" disabled>Jouer</button>
+      </section>
+    </div>
+  </div>
+
+</div>
