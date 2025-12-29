@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Vidéos - RoBo_Go</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="../favicon/site.webmanifest">
+  <link rel="stylesheet" href="https://unpkg.com/7.css">
+  <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+  <style>
+
+
+    .video-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Style simple des éléments de la grille */
+    .video-item {
+      text-decoration: none !important;
+      color: #000 !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 150px;
+      padding: 10px;
+      border: 1px solid transparent;
+    }
+
+    .video-item:hover {
+      background: rgba(0, 0, 0, 0.05);
+      border: 1px solid #ccc;
+    }
+
+    /* Miniature simple sans aucun cadre */
+    .thumbnail {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border: 1px solid #777;
+      display: block;
+    }
+
+    .video-name {
+      margin-top: 8px;
+      font-size: 11px;
+      font-weight: bold;
+      text-align: center;
+      display: block;
+    }
+
+    .window.dark.active {
+      background: rgba(255, 255, 255, 0.8) !important;
+    }
+
+	
+		}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <div class="header-inner">
+        <h1 style="user-select: none; ">RoBo_Go</h1>
+      </div>
+
+      <nav class="topbar">
+        <ul class="links">
+          <li>
+            <a href="https://robo-go.github.io">
+              <img src="../Home.png" alt="Home icon" class="link-icon"> Accueil
+            </a>
+          </li>
+          <li>
+            <a href="https://robo-go.github.io/jeux">
+              <img src="../games.ico" alt="Game icon" class="link-icon"> Jeux
+            </a>
+          </li>
+          <li>
+            <a href="https://robo-go.github.io/about">
+              <img src="../i.ico" alt="Info icon" class="link-icon"> À propos
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="card-body">
+        <div class="window active" style="max-width: 800px; margin: 40px auto;">
+          <div class="title-bar">
+            <div class="title-bar-text">Bibliothèque - Vidéos</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          
+          <div class="window-body">
+            <h2 style="margin-left: 10px;">Mes Vidéos</h2>
+            
+            <div class="video-grid">
+              
+              <a href="" class="video-item">
+                <img src="https://img.youtube.com/vi/D5_uPd9dzVg/maxresdefault.jpg" class="thumbnail">
+                <span class="video-name">placeholder</span>
+              </a>
+
+              <a href="" class="video-item">
+                <img src="https://img.youtube.com/vi/D5_uPd9dzVg/maxresdefault.jpg" class="thumbnail">
+                <span class="video-name">placeholder</span>
+              </a>
+
+              <a href="" class="video-item">
+                <img src="https://img.youtube.com/vi/D5_uPd9dzVg/maxresdefault.jpg" class="thumbnail">
+                <span class="video-name">placeholder</span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
