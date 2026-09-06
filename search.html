@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="twitter:title" content="Search - RoBo_Go">
+  <meta name="twitter:description" content="Search the web with Google">
+
+  <title>Search - RoBo_Go</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="https://unpkg.com/7.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <div class="card">
+
+      <!-- Header -->
+      <div class="header-inner">
+        <h1 style="user-select: none;">RoBo_Go</h1>
+      </div>
+
+      <!-- Navigation bar -->
+      <nav class="topbar">
+        <ul class="links">
+
+          <li>
+            <a href="https://robo-go.is-a.dev">
+              <img src="Home.png"
+                   alt="Home icon"
+                   draggable="false"
+                   class="link-icon">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="https://robo-go.is-a.dev/jeux">
+              <img src="games.ico"
+                   alt="Game icon"
+                   draggable="false"
+                   class="link-icon">
+              Games
+            </a>
+          </li>
+
+          <li>
+            <a href="https://robo-go.is-a.dev/about">
+              <img src="i.ico"
+                   alt="Info icon"
+                   draggable="false"
+                   class="link-icon">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="recherche.html">
+              🔎 Search
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Search content -->
+      <div class="card-body">
+
+        <h2 class="welcome-title">
+          <b>Search the web</b>
+        </h2>
+
+        <h2 class="section-title">
+          <img src="i.ico"
+               alt=""
+               draggable="false"
+               class="heading-icon">
+          <b>Google Search</b>
+        </h2>
+
+        <p class="intro-text">
+          Enter something below to search the web with Google.
+        </p>
+
+        <form
+          action="https://www.google.com/search"
+          method="GET"
+          style="display: flex; gap: 8px; align-items: center; margin-top: 20px;"
+        >
+
+          <input
+            type="text"
+            name="q"
+            placeholder="Search Google..."
+            autocomplete="off"
+            required
+            style="
+              flex: 1;
+              padding: 8px;
+              font-size: 16px;
+              box-sizing: border-box;
+            "
+          >
+
+          <button
+            type="submit"
+            style="
+              padding: 8px 16px;
+              font-size: 16px;
+              cursor: pointer;
+            "
+          >
+            Search
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="container footer"></footer>
+
+</body>
+</html>
