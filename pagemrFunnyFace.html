@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr FunnyFace - RoBo_Go</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="https://unpkg.com/7.css">
+
+  <style>
+    /* --- Game content layout --- */
+    .game-layout {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .game-layout img {
+      width: 45%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .game-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-width: 250px;
+    }
+
+    /* --- Dark and translucent window --- */
+    .window.dark {
+      background: rgba(20, 20, 20, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border-radius: 8px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    .window.dark .title-bar {
+      background: linear-gradient(rgba(80, 80, 80, 0.8), rgba(30, 30, 30, 0.8));
+      color: #fff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px 8px 0 0;
+      text-shadow: none;
+    }
+
+    .window.dark .title-bar-text {
+      color: #fff;
+      text-shadow: none;
+    }
+
+    .window.dark .window-body {
+      background: rgba(35, 35, 35, 0.6);
+      border-radius: 0 0 8px 8px;
+      color: #fff;
+      padding: 20px;
+    }
+
+    h2, p {
+      color: #fff;
+    }
+
+    /* --- Readable text --- */
+    .game-info h3 {
+      color: #ffffff;
+    }
+
+    .game-info p {
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    /* --- Windows 7 style "Play" button (7.css) --- */
+    .win7-button {
+      font-family: "Segoe UI", sans-serif;
+      font-size: 14px;
+      padding: 6px 16px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background: linear-gradient(to bottom, #f0f0f0, #dcdcdc);
+      box-shadow: inset 0 1px 0 #fff;
+      color: #000;
+      cursor: pointer;
+      transition: 0.15s;
+    }
+
+    .win7-button:hover {
+      background: linear-gradient(to bottom, #e4e4e4, #c8c8c8);
+    }
+
+    .win7-button:active {
+      background: linear-gradient(to bottom, #c8c8c8, #e4e4e4);
+      box-shadow: inset 0 2px 3px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="card">
+
+      <div class="header-inner">
+        <h1 style="user-select: none;">RoBo_Go</h1>
+      </div>
+
+      <!-- Navigation bar -->
+      <nav class="topbar">
+        <ul class="links">
+
+          <li>
+            <a href="https://robo-go.github.io">
+              <img src="Home.png"
+                   alt="Home icon"
+                   draggable="false"
+                   class="link-icon">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="https://robo-go.github.io/Games">
+              <img src="games.ico"
+                   alt="Game icon"
+                   draggable="false"
+                   class="link-icon">
+              Games
+            </a>
+          </li>
+
+          <li>
+            <a href="https://robo-go.github.io/about">
+              <img src="i.ico"
+                   alt="Info icon"
+                   draggable="false"
+                   class="link-icon">
+              About
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Main content -->
+      <div class="card-body">
+
+        <div class="window dark active" style="max-width: 900px; margin: 0 auto;">
+
+          <div class="title-bar">
+            <div class="title-bar-text">Mr FunnyFace</div>
+
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+
+          <div class="window-body">
+
+            <div class="game-layout">
+
+              <!-- Game image -->
+              <img src="ddfsnap.png" alt="Game screenshot">
+
+              <!-- Description + button -->
+              <div class="game-info">
+
+                <div>
+                  <h3>Description:</h3>
+
+                  <p>
+                    WARNING
+                  </p>
+				  
+                  <p>
+                    This game is in french and will never have an english translation (also it's very trashy, go check other games)
+                  </p>
+				  
+                  <p>
+                    My first Wick game, very trashy.
+                  </p>
+                </div>
+
+                <!-- Windows 7 style Play button -->
+                <div style="text-align: right; margin-top: 20px;">
+
+                  <a href="https://robo-go.github.io/mrFunnyFace" target="_blank">
+                    <button class="win7-button">Play</button>
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>
